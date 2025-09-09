@@ -17,9 +17,9 @@ app.use(cors());
 
 // TABELA DE PREÇOS
 const precos ={
-    bicicleta: 0.80,
-    carro: 0.95,
-    drone: 1.20
+    bicicleta: 5.00,
+    carro: 9.50,
+    drone: 12.00
 }
 
 // CRIANDO A ROTA DA APLICAÇÃO

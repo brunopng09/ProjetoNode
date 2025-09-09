@@ -2,18 +2,23 @@
 import { useState } from 'react';
 
 function CalcularFrete() {
+  // HOOK - useState manipula o estaodo da variavel
   const [distancia, setDistancia] = useState('');
   const [tipoTransporte, setTipoTransporte] = useState('bicicleta');
   const [valorFrete, setValorFrete] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
+  // Criando uma função handleSubmit
   const handleSubmit = async (e) => {
+    // Evita que a pagina se recarregue
     e.preventDefault();
     setLoading(true);
     setValorFrete(null);
     setError(null);
 
+
+  // TRATAMENTO DE ERROS
     try {
       const response = await fetch('http://localhost:5001/calcularfrete', {
         method: 'POST',
