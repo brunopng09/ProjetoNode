@@ -3,7 +3,7 @@ const express = require("express");
 const cors = require("cors");
 
 
-// CRIANDO A IINSTANCIA DA APLICAÇÃO EXPRESS
+// CRIANDO A INSTANCIA DA APLICAÇÃO EXPRESS
 const app = express();
 
 // DEFININDO A PORTA DE APLICAÇÃO
